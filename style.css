@@ -1,0 +1,19 @@
+body {
+  background: #111;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+}
+
+.movie {
+  margin: 20px;
+}
+
+.movie img {
+  width: 150px;
+}
