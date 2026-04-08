@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <head>
   <title>Smart Movie Explorer</title>
+=======
+
+<head>
+  <title>NETWATCH</title>
+>>>>>>> 1553344 (Milestone 3 complete)
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<<<<<<< HEAD
   <h1>🎬 Smart Movie Explorer</h1>
 
   <input type="text" id="searchInput" placeholder="Search movies...">
@@ -17,4 +24,58 @@
   <script src="script.js"></script>
 
 </body>
+=======
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <h2>NETWATCH</h2>
+    <div>
+      <button onclick="showHome()">Home</button>
+      <button onclick="showFavorites()">My List</button>
+      <button onclick="toggleTheme()">Light</button>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <div class="hero">
+    <h1>UNLIMITED MOVIES</h1>
+    <p>Search • Explore • Discover</p>
+
+    <input id="searchInput" placeholder="Search movies...">
+    <button onclick="searchMovies()">SEARCH</button>
+
+    <div class="quick">
+      <button onclick="quickSearch('Batman')">Batman</button>
+      <button onclick="quickSearch('Marvel')">Marvel</button>
+      <button onclick="quickSearch('Star Wars')">Star Wars</button>
+    </div>
+  </div>
+
+  <!-- FILTERS -->
+  <div class="controls">
+    <select onchange="filterMovies(this.value)">
+      <option value="all">All</option>
+      <option value="new">After 2015</option>
+      <option value="old">Before 2015</option>
+    </select>
+
+    <button onclick="sortAZ()">A-Z</button>
+    <button onclick="sortZA()">Z-A</button>
+  </div>
+
+  <!-- MOVIES -->
+  <div id="movies"></div>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">✖</span>
+      <img id="modalPoster">
+      <h2 id="modalTitle"></h2>
+      <p id="modalRating"></p>
+      <p id="modalPlot"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+>>>>>>> 1553344 (Milestone 3 complete)
 </html>
